@@ -8,8 +8,7 @@
             <title>A valid HTML5 document</title>
         </head>
         <body>
-            <span id="animal">dogs</span>
-            are cool like
+            <span id="textThatChanges">gaming</span>
         </body>
     </html>
 
@@ -18,21 +17,25 @@
 
 <script>
     console.log("jquery Loaded");
-    function changetocat() {
-        $('title').html("cat");
-        $('#animal').html("cats");
+    function toGamingSmall() {
+        $('title').html("gaming");
+        
+        $('#textThatChanges').removeClass().addClass('sizeSmall');
     }
-    function changetodog() {
-        $('title').html("dog");
-        $('#animal').html("dogs");
+    function toGamingMedium() {
+        $('title').html("GAMING");
+        $('#textThatChanges').removeClass().addClass('sizeMedium');
+    }
+    function toGamingLarge() {
+        $('title').html("G A M I N G");
+        $('#textThatChanges').removeClass().addClass('sizeLarge');
     }
     
-    repeat();
- 
     function repeat(){
-        changetocat();
-        setTimeout(changetodog, 1000);
-        setTimeout(repeat, 2000);
+        toGamingSmall();
+        setTimeout(toGamingMedium, 800);
+        setTimeout(toGamingLarge, 1600);
+        setTimeout(repeat, 2400);
     }
-    
+    repeat();
 </script>
