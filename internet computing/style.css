@@ -1,0 +1,21 @@
+span{
+    position: absolute;
+}
+.sizeSmall{
+    font-size: 60px;
+    right: 0;
+    top: 10%;
+    -webkit-transform: rotate(80deg);
+}
+.sizeMedium{
+    font-size: 200px;
+    left: 50;
+    top: 30%;
+    -webkit-transform: rotate(170deg);
+}
+.sizeLarge{
+    font-size: 500px;
+    font-style: italic;
+    color: #ff2222;
+    -webkit-transform: rotate(30deg);
+}
