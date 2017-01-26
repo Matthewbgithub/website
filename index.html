@@ -8,34 +8,12 @@
             <title>Matt</title>
         </head>
         <body>
-            <span id="textThatChanges">gaming</span>
+            <h1>Matt's website!</h1>
+            <br/>
+            <a href="gaming/">Gaming</a>
         </body>
     </html>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<script>
-    console.log("jquery Loaded");
-    function toGamingSmall() {
-        $('title').html("gaming");
-        
-        $('#textThatChanges').removeClass().addClass('sizeSmall');
-    }
-    function toGamingMedium() {
-        $('title').html("GAMING");
-        $('#textThatChanges').removeClass().addClass('sizeMedium');
-    }
-    function toGamingLarge() {
-        $('title').html("G A M I N G");
-        $('#textThatChanges').removeClass().addClass('sizeLarge');
-    }
-    
-    function repeat(){
-        toGamingSmall();
-        setTimeout(toGamingMedium, 800);
-        setTimeout(toGamingLarge, 1600);
-        setTimeout(repeat, 2400);
-    }
-    repeat();
-</script>

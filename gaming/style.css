@@ -1,5 +1,7 @@
 body{
     overflow: hidden;
+    height: 100%;
+    with: 100%;
 }
 span{
     position: absolute;
