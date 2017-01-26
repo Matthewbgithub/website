@@ -5,6 +5,7 @@ body{
 }
 span{
     position: absolute;
+    top: 35%;
 }
 .sizeSmall{
     font-size: 60px;
