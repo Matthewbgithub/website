@@ -6,22 +6,26 @@ body{
 span{
     position: absolute;
     top: 35%;
+    transition: all 0.3s;
 }
 .sizeSmall{
     font-size: 60px;
     right: 0;
     top: 10%;
     -webkit-transform: rotate(80deg);
+    transition: all 0.3s;
 }
 .sizeMedium{
     font-size: 200px;
     left: 50;
     top: 30%;
     -webkit-transform: rotate(170deg);
+    transition: all 0.3s;
 }
 .sizeLarge{
     font-size: 500px;
     font-style: italic;
     color: #ff2222;
     -webkit-transform: rotate(30deg);
+    transition: all 0.3s;
 }
