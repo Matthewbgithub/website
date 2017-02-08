@@ -1,0 +1,162 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+nav {
+    width: inherit;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    display: block;
+    z-index: 10;
+    transition: all 0.2s;
+}
+
+.navLong {
+    color: #fff;
+    background-color: #111;
+}
+
+.navShort {
+    color: #444;
+    background-color: #fff;
+}
+
+#navigation {
+    margin: auto;
+    height: inherit;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#gymTitle {
+    font-size: 40px;
+    color: #444;
+}
+
+.navOption {
+    flex: 1 1 auto;
+    max-width: 100px;
+    height: auto;
+    padding: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: auto;
+    transition: all 0.2s;
+}
+
+.navOption:hover {
+    background-color: #039BE5;
+    transition: all 0.2s;
+    color: #fff;
+}
+
+#headContainer {
+    margin-top: 100px;
+    position: relative;
+}
+
+#headImage {
+    background-image: url(assets/dumbells.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    filter: grayscale(100%);
+    transition: all 0.4s;
+    box-shadow: inset 0px -126px 88px -40px rgba(0, 0, 0, 0.67);
+}
+
+.smallImage {
+    opacity: 0;
+}
+
+#headText {
+    position: absolute;
+    bottom: 10px;
+    font-size: 250px;
+    color: #039be5;
+    right: 80px;
+    transition: all 0.4s;
+}
+
+.titleGone {
+    opacity: 0;
+}
+
+.titleNotGone {
+    opacity: 1;
+}
+
+.options .quotes {
+    flex: 1 1 0;
+    padding: 20px;
+    margin: 5px;
+    background-color: #f5f5f5;
+    min-height: 100px;
+}
+
+#optionContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.options {
+    display: flex;
+}
+
+.quotes {
+    font-size: 20px;
+    transition: background-color 0.2s;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    background-color: #F44336 !important;
+}
+
+.darkRed {
+    background-color: #B71C1C !important;
+}
+
+
+/*
+#title {
+	text-align:center;
+	animation-name: mymove;
+    animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#outertitle{
+	width: 100%;
+	position: absolute;
+	animation-name: expand;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes mymove {
+    0%   {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes expand {
+    0%   {font-size: 10px;}
+	100% {font-size: 2px;}
+}*/
