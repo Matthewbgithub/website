@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+    
+}
 
 body {
   padding: 0;
@@ -7,7 +9,9 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71;
+overflow: hidden;
+}
 
 
 span{
@@ -30,6 +34,18 @@ span{
     font-style: italic;
     color: #ff2222;
     -webkit-transform: rotate(30deg);
+}
+#titlecontainer{
+    height: 70px;
+}
+.title {
+    font-size: 70px;
+    color: #11ff89;
+    transition: all 0.2s;
+}
+.title:hover{
+    font-size: 800px;
+    transition: all 0.2s;
 }
 
 
