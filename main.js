@@ -15,4 +15,7 @@ $('.bigbox').on('mouseover', function(e) {
         window.location.href = $(this).attr('link');
     })
     
+    $('.topBox').on('click', function(){
+        window.location.href = "/info.html";
+    })
 });

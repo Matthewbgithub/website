@@ -26,16 +26,27 @@ span{
     transform: rotate(315deg);
     margin-left: -15vw;
     margin-top: -15vw;
+    padding-left: 6%;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.topBox:hover{
+    height: 34vw;
+    width: 34vw;
+    margin-left: -17vw;
+    margin-top: -17vw;
+    padding-left: 8%;
 }
 .title {
     position: absolute;
     bottom: 0;
-    margin-left: 25%;
+    /*margin-left: 19%;*/
     font-size: 3vw;
     font-weight: 700;
     font-family: "Open Sans";
     color: #fff;
 }
+
 @media (max-width: 1000px) {
     .topBox{
         margin-left: -150px;
