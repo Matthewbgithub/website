@@ -15,17 +15,37 @@ span{
     position: absolute;
 }
 .topBox{
+    min-width: 300px;
+    min-height: 300px;
+    position: absolute;
     background-color: #F44336;
-    height: 30vh;
+    height: 30vw;
+    width: 30vw;
+    -webkit-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+    margin-left: -15vw;
+    margin-top: -15vw;
 }
-
 .title {
-    padding-top: 80px;
-    font-size: 70px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25%;
+    font-size: 3vw;
     font-weight: 700;
     font-family: "Open Sans";
     color: #fff;
 }
+@media (max-width: 1000px) {
+    .topBox{
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+
 .option{
     background-color: #f44336;
     margin: 20px;
@@ -38,7 +58,7 @@ span{
 .bigbox{
     transition: all 0.2s;
     position: absolute;
-    background-color: #000;
+    background-color: #B71C1C;
     z-index: 999;
     cursor: pointer;
     width: 100%;
@@ -46,7 +66,7 @@ span{
     box-shadow: 0px 15px 31px 0px rgba(0,0,0,0.75);
 }
 .expandbox{
-    width: 100%;
+    width: 120%;
     margin: 0;
     pading: 0;
     height: 50vh;
@@ -54,6 +74,15 @@ span{
 .up {
     position: absolute;
     bottom: 0;
+}
+.down{
+    top: 0;
+}
+.right{
+    right: 0;
+}
+.left{
+    left: 0;
 }
 .transparent{
     opacity: 0;
