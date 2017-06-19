@@ -99,7 +99,7 @@ span{
 }
 @media (max-width: 666px){
     .option{
-        height: 18vh;
+        height: 15vh;
     }
     .group{
         width: 80%;
