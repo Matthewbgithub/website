@@ -104,6 +104,9 @@ span{
     .group{
         width: 80%;
     }
+    .optioncontainer{
+        max-height: 90vh;
+    }
 }
 .bigbox{
     transition: all 0.2s;
