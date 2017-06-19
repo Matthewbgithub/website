@@ -11,7 +11,7 @@ $('.bigbox').on('mouseover', function(e) {
         $(this).removeClass("expandbox");
     });
     
-    $('.bigbox').on('click', function(){
+    $('.option').on('click', function(){
         window.location.href = $(this).attr('link');
     })
     

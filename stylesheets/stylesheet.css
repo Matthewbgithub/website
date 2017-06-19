@@ -30,13 +30,7 @@ span{
     cursor: pointer;
     transition: all 0.1s;
 }
-.topBox:hover{
-    height: 34vw;
-    width: 34vw;
-    margin-left: -17vw;
-    margin-top: -17vw;
-    padding-left: 8%;
-}
+
 .title {
     position: absolute;
     bottom: 0;
@@ -56,15 +50,57 @@ span{
         font-size: 30px;
     }
 }
-
+@media (min-width: 1000px){
+    .topBox:hover{
+    height: 34vw;
+    width: 34vw;
+    margin-left: -17vw;
+    margin-top: -17vw;
+    padding-left: 8%;
+}
+}
+.optioncontainer{
+    align-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
 .option{
-    background-color: #f44336;
-    margin: 20px;
+    background-color: #ddd;
+    color: #000 !important;
+    margin: 0 auto 30px auto;
     padding: 30px;
-    transition: all 0.2s;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
     color: #fff;
     font-weight: 700;
     font-size: 20px;
+    cursor: pointer;
+    
+    transition: all 0.2s;
+}
+.option:hover{
+    background-color: #eee;
+    box-shadow: 0px 15px 31px 0px rgba(0,0,0,0.4);
+}
+.group {
+    width: 40%;
+    min-width: 180px;
+    margin: 0 20px 0 0;    
+}
+@media (max-width: 666px){
+    .option{
+        height: 20vh;
+    }
+    .group{
+        width: 80%;
+    }
 }
 .bigbox{
     transition: all 0.2s;
