@@ -99,13 +99,16 @@ span{
 }
 @media (max-width: 666px){
     .option{
-        height: 15vh;
+        
     }
     .group{
         width: 80%;
     }
     .optioncontainer{
-        max-height: 90vh;
+        padding-top: 5vh;
+        max-height: 100vh;
+        overflow: scroll;
+        width: 100vw;
     }
 }
 .bigbox{

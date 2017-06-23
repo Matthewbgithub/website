@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-$('.bigbox').on('mouseover', function(e) {
+    $('.bigbox').on('mouseover', function(e) {
     if (e.target === this) {
         $(this).removeClass("transparent");
             $(this).addClass("expandbox");
@@ -18,4 +18,6 @@ $('.bigbox').on('mouseover', function(e) {
     $('.topBox').on('click', function(){
         window.location.href = "/info.html";
     })
+    /*$('.option').css('color', $(this).attr('col'));
+    $('.option').css('border-bottom-color', $(this).attr('col'));*/
 });
