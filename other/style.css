@@ -35,7 +35,6 @@ body{
     font-weight: bold;
     position: absolute;
     font-size: 6rem;
-    color: #0D47A1;
     animation: swim 1s infinite linear, upndown 1s infinite ease-in-out alternate;
     right: -1rem;
     
