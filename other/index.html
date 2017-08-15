@@ -1,50 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>oh damn</title>
+    <title>bandai namco</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Playfair+Display" rel="stylesheet">
 </head>
     <body>
-        <div class="leftandrightcontain">
-            <div class="leftSide">
-            <h2 class="middleText">dom selection</h2>
-            <div class="line"></div>
-            <div class="parentClass">parent class
-                <div class="childClass">child class</div>
-                <div class="childClass" id="directId">child class and directId</div>
-                <div id="childId">childId</div>
-                <div id="directId">directid2</div>
+        <div class="large-title">
+                   ~ Matt
+        </div>
+        <div class="splashzone">
+<!--
+            <div class="water">
+                    M
             </div>
-                <div class="childClass">child class not in parent</div>
-                </div>
-            <div class="rightSide">
-                text here
-            </div>
+-->
         </div>
-        <h2 class="middleText">flexy boys</h2>
-        <div class="line"></div>
-        <div class="container">
-            <div class="fiftywidth bordered">50</div>
-            <div class="fiftywidth bordered">50</div>
-        </div>
-        <br/>
-        <div class="box-container bordered">
-            <div class="box bordered">box in the middle</div>
-        </div>
-        <div id="arrayoutput1">out1</div>
-        <div id="arrayoutput2">out2</div>
-        <script> 
-                var arr = [1,2,4,3,5,6];
-                document.getElementById('arrayoutput1').innerHTML = arr;
-                var sorted = arr.sort(function(a,b){
-                    return b-a;
-                })
-                var reduced = arr.reduce(function(a,b){
-                    return a*b;
-                })
-                document.getElementById('arrayoutput2').innerHTML = reduced;
-        </script>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="swim.js"></script>
     </body>
 </html>
