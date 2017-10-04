@@ -1,0 +1,51 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #444;
+    margin-top: 60px;
+}
+
+.long-content {
+    height: 120vh;
+}
+
+.scrollBanner {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.banner {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.28);
+    color: black;
+    background-color: #fff;
+    font-size: 1.3rem;
+}
+
+.banner-inner {
+    line-height: 60px;
+    padding: 0px 3%;
+
+}
+
+.r-w {
+    max-width: 1200px;
+}
+
+.m-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding: 3%;
+    line-height: 1.5;
+}
