@@ -22,8 +22,12 @@ body {
     width: 100%;
 }
 
-.banner {
+.nav-shadow {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.28);
+}
+
+.banner {
+    transition: box-shadow 0.3s;
     color: black;
     background-color: #fff;
     font-size: 1.8rem;
@@ -53,6 +57,6 @@ body {
 }
 
 .content {
-    padding: 30px 6%;
+    padding: 20px 6%;
     line-height: 1.5;
 }

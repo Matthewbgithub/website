@@ -9,6 +9,7 @@ $(document).ready(function () {
     var bannerHeight = 40;
     $(window).scroll(function (event) {
 
+        addNavShadow();
         var st = $(window).scrollTop();
         //        console.log(isBetweenScrolling + " - to: " + scrollToPos + ", at: " + st);
         if (st > lastScrollTop) {
@@ -53,5 +54,15 @@ $(document).ready(function () {
         lastScrollTop = st;
     });
 
+    function addNavShadow() {
+        var element = $('.addScrollShadow');
+        var className = 'nav-shadow';
+        var offset = 50;
+        if ($(window).scrollTop() > offset) {
+            element.addClass(className);
+        } else {
+            element.removeClass(className);
+        }
+    }
 
 });
