@@ -65,5 +65,25 @@ $(document).ready(function () {
         }
     }
 
+    /*emoji section
+    -------------------------------------*/
+    $('#emoji-submit').on('click', function () {
+        var emojiOutput = $('#emoji-input').val();
+        var second = emojiOutput.split(" ");
+        var finalOut = "";
+        for (var i = 0; i < second.length; i++) {
+            finalOut += second[i] + "👏";
+        }
+        $('#emoji-output').html(finalOut);
+        $('#emoji-output').attr('data-clipboard-text', finalOut);
 
+
+    });
+    $('#emoji-output').on('click', function () {
+        $('.copy').addClass('visible');
+        setTimeout(function () {
+            $('.copy').removeClass('visible');
+        }, 1000);
+    });
+    new Clipboard('.btn');
 });
