@@ -57,7 +57,7 @@ $(document).ready(function () {
     function addNavShadow() {
         var element = $('.addScrollShadow');
         var className = 'nav-shadow';
-        var offset = 50;
+        var offset = 40;
         if ($(window).scrollTop() > offset) {
             element.addClass(className);
         } else {
