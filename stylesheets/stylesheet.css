@@ -1,15 +1,17 @@
 * {
-    margin: 0;
+	margin: 0;
 }
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    line-height: 1.5;
-    color: #606c71;
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #606c71;
 	overflow-x: hidden;
 }
+
 /*
 .topBox{
     min-width: 300px;
@@ -136,15 +138,17 @@ body {
 .left{
     left: 0;
 }*/
-.pic{
+
+.pic {
 	height: 100vh;
 	width: 70vw;
 	background-size: cover;
 	position: absolute;
-	background-image: url(../me.jpeg);
+	background-image: url(../matt.jpg);
 	background-position: center;
 }
-.pic p{
+
+.pic p {
 	font-size: 10vw;
 	font-weight: 700;
 	color: white;
@@ -152,16 +156,19 @@ body {
 	line-height: 100vh;
 	background-color: rgba(1, 1, 1, 0.37);
 }
-.page{
+
+.page {
 	height: 100vh;
 	position: relative;
 }
-.sideWrap{
+
+.sideWrap {
 	position: absolute;
 	width: 30vw;
 	right: 0;
 }
-.sideText{
+
+.sideText {
 	position: absolute;
 	z-index: 5;
 	height: 100vh;
@@ -170,7 +177,8 @@ body {
 	width: 31vw;
 	line-height: 100vh;
 }
-.sideBit{
+
+.sideBit {
 	position: absolute;
 	background-color: white;
 	margin-top: -10vh;
@@ -181,36 +189,76 @@ body {
 	transform: rotate(7deg);
 	z-index: 4;
 }
-.part2{
+
+.part2 {
 	background-color: rgb(247, 247, 247);
 	position: relative;
 	z-index: 5;
 	padding: 4%;
-	box-shadow: inset 0px 14px 50px -19px rgba(0,0,0,0.48);
+	box-shadow: inset 0px 14px 50px -19px rgba(0, 0, 0, 0.48);
 	min-height: 100vh;
 }
-.part2 p:first-child{
+
+.part2 p:first-child {
 	font-weight: 700;
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
-.project{
-	box-shadow: 0px 5px 30px -4px rgba(0,0,0,0.34);
+
+a.project-outer {
+	color: inherit;
+	text-decoration: none;
+}
+
+.project-outer:hover .projectLink {
+	width: 64%;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.project-outer:hover .projectImage {
+	width: 36%;
+	transition: all 0.1s;
+}
+
+.project-outer:hover .projectImage img {
+	margin-left: -7%;
+	transition: all 0.1s;
+}
+
+.project {
 	margin: auto;
 	max-width: 1000px;
-	height: 310px;
+	height: 300px;
 	background-color: white;
 	border-radius: 10px;
 	display: flex;
+	align-content: stretch;
 	margin-top: 3%;
+	box-shadow: 0px 5px 30px -4px rgba(0, 0, 0, 0.1);
+	transition: all 0.1s;
 }
-.project>img{
+
+.project > .projectImage {
 	height: inherit;
-	border-radius: 10px 0px 0px 10px;
+	width: 40%;
+	overflow: hidden;
+	border-radius: 0px 10px 10px 0px;
+	transition: all 0.1s;
 }
-.project .projectLink{
+
+.projectImage img {
+	margin-left: 0%;
+	height: inherit;
+	transition: all 0.1s;
+}
+
+.project .projectLink {
 	padding: 4%;
+	width: 60%;
+	transition: all 0.1s;
 }
-.transparent{
-    opacity: 0;
+
+.transparent {
+	opacity: 0;
 }
