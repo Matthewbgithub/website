@@ -1,0 +1,63 @@
+body,
+html {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.window {
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background-color: #008080;
+	overflow: hidden;
+}
+
+.window__box {
+	width: 500px;
+	position: relative;
+}
+
+.box__title-bar {
+	padding: 4px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #000080;
+	color: white;
+	font-size: 2rem;
+}
+
+.boxttb__close {
+	float: right;
+	color: black;
+	background-color: #C0C0C0;
+	line-height: 30px;
+	/*	these height values are the 50px height - 4px border & -4px padding from parent & 4padding from border pushable*/
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.box__content {
+	min-height: 200px;
+	padding: 15px;
+	background-color: #C0C0C0;
+}
+
+.win98-border {
+	border-width: 4px;
+	border-style: outset;
+	border-color: #DFDFDF #808080 #808080 #DFDFDF;
+}
+
+.win98-border.win98-border--pushable:active {
+	padding: 8px 0px 0px 8px;
+	border-width: 4px;
+	border-style: inset;
+	border-color: #808080 #DFDFDF #DFDFDF #808080;
+}
+
+.win98-border.win98-border--pushable {
+	padding: 4px;
+}
