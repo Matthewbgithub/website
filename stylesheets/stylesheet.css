@@ -12,6 +12,16 @@ body {
 	overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-font {
+	font-family: 'Secular One', sans-serif;
+}
+
 /*
 .topBox{
     min-width: 300px;
@@ -141,25 +151,29 @@ body {
 
 .pic {
 	height: 100vh;
-	width: 70vw;
+	width: 60vw;
 	background-size: cover;
 	position: absolute;
 	background-image: url(../matt.jpg);
 	background-position: center;
-}
 
-.pic p {
-	font-size: 10vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	font-weight: 700;
-	color: white;
-	text-align: center;
-	line-height: 100vh;
 	background-color: rgba(1, 1, 1, 0.37);
 }
 
-.page {
+.pic h1 {
+	color: #fff;
+	font-size: 10vw;
+}
+
+.header-section {
 	height: 100vh;
 	position: relative;
+	display: flex;
 }
 
 .sideWrap {
@@ -172,10 +186,43 @@ body {
 	position: absolute;
 	z-index: 5;
 	height: 100vh;
-	padding: 2%;
+	padding: 3vw;
 	right: 0;
-	width: 31vw;
-	line-height: 100vh;
+	width: 40vw;
+}
+
+.profile-pic {
+	margin: 20px;
+	border-radius: 50%;
+	float: right;
+	overflow: hidden;
+	height: 60px;
+	width: 60px;
+}
+
+.profile-pic img {
+	height: 100%;
+	width: 100%;
+}
+
+
+.image-cover {
+	width: 100vw;
+	top: -20%;
+	height: 140%;
+	position: relative;
+	overflow: hidden;
+}
+
+.image-cover:before {
+	content: '';
+	position: absolute;
+	right: 40vw;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	box-shadow: 400px 0px 0px 300px #fff;
+	max-width: 1024px;
 }
 
 .sideBit {
@@ -211,18 +258,17 @@ a.project-outer {
 }
 
 .project-outer:hover .projectLink {
-	width: 64%;
-	padding-left: 6%;
-	padding-right: 6%;
+	width: 66%;
 }
 
 .project-outer:hover .projectImage {
-	width: 36%;
+
 	transition: all 0.1s;
 }
 
 .project-outer:hover .projectImage img {
-	margin-left: -7%;
+	right: -2%;
+	left: -4%;
 	transition: all 0.1s;
 }
 
@@ -233,7 +279,6 @@ a.project-outer {
 	background-color: white;
 	border-radius: 10px;
 	display: flex;
-	align-content: stretch;
 	margin-top: 3%;
 	box-shadow: 0px 5px 30px -4px rgba(0, 0, 0, 0.1);
 	transition: all 0.1s;
@@ -242,21 +287,32 @@ a.project-outer {
 .project > .projectImage {
 	height: inherit;
 	width: 40%;
+	position: relative;
 	overflow: hidden;
 	border-radius: 0px 10px 10px 0px;
 	transition: all 0.1s;
 }
 
 .projectImage img {
-	margin-left: 0%;
-	height: inherit;
+	position: absolute;
+	left: 0%;
+	height: 100%;
+	width: 400px;
+	object-position: center;
 	transition: all 0.1s;
 }
 
 .project .projectLink {
-	padding: 4%;
+	padding: 2% 3%;
 	width: 60%;
 	transition: all 0.1s;
+	display: flex;
+	justify-content: center;
+}
+
+.projectLink .projectLink-inner {
+	width: 47vw;
+	max-width: 500px;
 }
 
 .transparent {

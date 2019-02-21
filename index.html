@@ -2,6 +2,7 @@
 <html lang="en">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 <link rel="icon" type="image/png" href="icon.png">
 
@@ -13,53 +14,90 @@
 </head>
 
 <body>
-	<div class="page">
+	<div class="header-section">
 		<div class="pic">
-			<p>Matt</p>
+			<h1>Matt</h1>
 		</div>
 		<div class="sideWrap">
-			<div class="sideBit">
-			</div>
 			<div class="sideText">
-				Projects
+				<div class="profile-pic">
+					<!--					must be square image-->
+					<img src="./matt.jpg">
+				</div>
+				<p>Hi,</p>
+				<p>My name is matt etc etc, nice bit of text here</p>
+				View projects underneath
+				<p>&nbsp;</p>
+				<p><a href="./CV.pdf" target="blank">View my CV</a></p>
 			</div>
+		</div>
+
+		<div class="image-cover">
 		</div>
 	</div>
 	<div class="part2">
-		<p>Projects:</p>
-		<div class="project">
+		<h2>Projects:</h2>
+		<a class="project-outer" href="https://github.com/Matthewbgithub/cs2010.git">
+			<div class="project">
+				<div class="projectLink">
+					<div class="projectLink-inner">
+						<p>Go Board Game</p>
+						Game developed at University as a group, I acted as lead programmer.
+					</div>
+				</div>
+				<div class="projectImage">
+					<img src="other/go.png">
+				</div>
+			</div>
+		</a>
+		<a class="project-outer" href="astonhack/index.html">
+			<div class="project">
+				<div class="projectLink">
+					<div class="projectLink-inner">
+						<p>Findasaurus</p>
+						Developed at AstonHack 2018
+					</div>
+				</div>
+				<div class="projectImage">
+					<img src="astonhack/thumb.jpg">
+				</div>
+			</div>
+		</a>
+<!--
+<a class="project-outer" href="mousejs/index.html">
+	<div class="project">
+		<div class="projectLink">
+			<div class="projectLink-inner">
+				<p>Mouse JS Tests</p>
+
+			</div>
+		</div>
+		<div class="projectImage">
 			<img src="astonhack/thumb.jpg">
-			<div class="projectLink">
-				<p><a href="window/index.html">Window Demo</a></p>
-				Draggable window
-			</div>
 		</div>
-		<div class="project">
-			<img src="astonhack/thumb.jpg">
-			<div class="projectLink">
-				<p><a href="astonhack/index.html">Aston hack</a></p>
-				Findasaurus game.
+	</div>
+</a>
+-->
+		<a class="project-outer" href="banner/index.html">
+			<div class="project">
+				<div class="projectLink">
+					<div class="projectLink-inner">
+						<p>Banner</p>
+						Floating banner test.
+					</div>
+				</div>
+				<div class="projectImage">
+					<img src="banner/thumb.jpg">
+				</div>
 			</div>
-		</div>
-		<div class="project">
-			<img src="astonhack/thumb.jpg">
-			<div class="projectLink">
-				<p><a href="mousejs/index.html">Mouse js tests</a></p>
-				im bored
-			</div>
-		</div>
-		<div class="project">
-			<img src="banner/thumb.jpg">
-			<div class="projectLink">
-				<p><a href="banner/index.html">Banner</a></p>
-				Floating banner test.
-			</div>
-		</div>
+		</a>
 		<a class="project-outer" href="clapping/index.html">
 			<div class="project">
 				<div class="projectLink">
-					<p>Clapping Emoji Inserter</p>
-					Inserts the clapping emoji into a block of text inbetween each word.
+					<div class="projectLink-inner">
+						<p>Clapping Emoji Inserter</p>
+						Inserts the clapping emoji into a block of text inbetween each word.
+					</div>
 				</div>
 				<div class="projectImage">
 					<img src="clapping/thumb.jpg">
