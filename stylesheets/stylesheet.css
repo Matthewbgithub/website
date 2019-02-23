@@ -154,7 +154,7 @@ h6,
 	width: 60vw;
 	background-size: cover;
 	position: absolute;
-	background-image: url(../matt.jpg);
+	background-image: url(../wideshot.JPG);
 	background-position: center;
 
 	display: flex;
@@ -162,8 +162,12 @@ h6,
 	justify-content: center;
 
 	font-weight: 700;
-	background-color: rgba(1, 1, 1, 0.37);
+	background-color: rgba(255, 1, 1, 0.37);
+	background-blend-mode: difference;
+
 }
+
+
 
 .pic h1 {
 	color: #fff;
@@ -308,6 +312,7 @@ a.project-outer {
 	transition: all 0.1s;
 	display: flex;
 	justify-content: center;
+	border-right: 10px solid #5ab7a9;
 }
 
 .projectLink .projectLink-inner {
@@ -317,4 +322,12 @@ a.project-outer {
 
 .transparent {
 	opacity: 0;
+}
+
+a {
+	color: #5ab7a0;
+}
+
+a:hover {
+	color: #3d7b6b;
 }
