@@ -8,7 +8,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	line-height: 1.5;
-	color: #606c71;
+	color: #41494d;
 	overflow-x: hidden;
 }
 
@@ -162,7 +162,7 @@ h6,
 	justify-content: center;
 
 	font-weight: 700;
-	background-color: rgba(255, 1, 1, 0.37);
+	background-color: rgba(110, 255, 205, 0.37);
 	background-blend-mode: difference;
 
 }
@@ -185,20 +185,27 @@ h6,
 	width: 30vw;
 	right: 0;
 }
-
+.wrapText{
+    float:left;
+    shape-outside: ellipse(38% 50% at 0px 50%);
+    width:100%;
+    height:100%;
+}
 .sideText {
 	position: absolute;
 	z-index: 5;
 	height: 100vh;
 	padding: 3vw;
 	right: 0;
-	width: 40vw;
+	width: 60vw;
 }
 
 .profile-pic {
-	margin: 20px;
+	margin: 0px 20px;
+    position: absolute;
+    right: 0px;
 	border-radius: 50%;
-	float: right;
+/*	float: right;*/
 	overflow: hidden;
 	height: 60px;
 	width: 60px;
@@ -208,7 +215,6 @@ h6,
 	height: 100%;
 	width: 100%;
 }
-
 
 .image-cover {
 	width: 100vw;
@@ -307,7 +313,7 @@ a.project-outer {
 	transition: all 0.1s;
 	display: flex;
 	justify-content: center;
-	border-right: 10px solid #5ab7a9;
+	border-right: 10px solid #ffba00;
 }
 
 .projectLink .projectLink-inner {
@@ -320,11 +326,11 @@ a.project-outer {
 }
 
 a {
-	color: #5ab7a0;
+	color: #ffba00;
 }
 
 a:hover {
-	color: #3d7b6b;
+	color: #ffba00;
 }
 
 @media only screen and (max-width: 700px) {
