@@ -82,6 +82,16 @@ body {
     width: 300px;
     padding: 20px;
 }
+.video{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe{
+    min-width: 80vw;
+    min-height: 50vw;
+}
 a, ul li::before {
     color: #2b8046;
 }
