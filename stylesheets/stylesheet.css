@@ -10,6 +10,10 @@ body {
 	line-height: 1.5;
 	color: #41494d;
 	overflow-x: hidden;
+    background-color: rgb(247, 247, 247);
+}
+html, body{
+    height: 100%;
 }
 
 h1,
@@ -164,10 +168,15 @@ h6,
 	font-weight: 700;
 	background-color: rgba(110, 255, 205, 0.37);
 	background-blend-mode: difference;
-
+    animation: picBlendColourAnim 8s infinite;
 }
 
-
+@keyframes picBlendColourAnim {
+  0%   {background-color: rgba(110, 255, 205, 0.37);}
+  25%  {background-color: rgba(211, 240, 47 , 0.37);}
+  50%  {background-color: rgba(116, 210, 231, 0.37);}
+  100% {background-color: rgba(110, 255, 205, 0.37);}
+}
 
 .pic h1 {
 	color: #fff;
@@ -178,6 +187,10 @@ h6,
 	height: 100vh;
 	position: relative;
 	display: flex;
+    overflow-y: hidden;
+    background-color: white;
+    min-height: 100vh;
+    z-index: 10;
 }
 
 .sideWrap {
@@ -248,18 +261,25 @@ h6,
 }
 
 .part2 {
-	background-color: rgb(247, 247, 247);
 	position: relative;
 	z-index: 5;
-	padding: 4%;
+	padding: 4%; /* change .bgslideffect padding too if this is changed*/
 	/*	box-shadow: inset 0px 14px 50px -19px rgba(0, 0, 0, 0.48);*/
 	min-height: 100vh;
+    transition: color 0.8s;
+}
+.scrolledOnePage .part2{
+    transition: color 0.3s;
+    color: white;
 }
 
-
 a.project-outer {
-	color: inherit;
+    color: #41494d;
 	text-decoration: none;
+    margin:auto;
+    margin-top: 30px;
+    display: block;
+    max-width:1000px;
 }
 
 .project-outer:hover .projectLink {
@@ -279,12 +299,11 @@ a.project-outer {
 
 .project {
 	margin: auto;
-	max-width: 1000px;
 	height: 300px;
 	background-color: white;
 	border-radius: 10px;
 	display: flex;
-	margin-top: 3%;
+	
 	box-shadow: 0px 5px 30px -4px rgba(0, 0, 0, 0.1);
 	transition: all 0.1s;
 }
@@ -358,4 +377,23 @@ a:hover {
 	.image-cover {
 		display: none;
 	}
+}
+.part2::before{
+    content:"";
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 1s ease-out;
+    width: 100%;
+    background-color: rgb(55,61,67);
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top:-1px;
+    
+}
+.scrolledOnePage .part2::before{
+/*    height: 100%;*/
+    transform: translateY(0px);
+    transition: transform 1s ease-in;
+
 }

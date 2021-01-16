@@ -10,6 +10,14 @@ $(document).ready(function() {
       $(this).addClass('transparent');
         $(this).removeClass("expandbox");
     });
+    var $window = $(window).scroll(function(){
+        if ($window.scrollTop() > $(window).height()){
+            $('body').addClass('scrolledOnePage');
+            console.log("scrolled");
+        }else{
+            $('body').removeClass('scrolledOnePage');
+        }
+    });
     
     $('.option').on('click', function(){
         window.location.href = $(this).attr('link');
