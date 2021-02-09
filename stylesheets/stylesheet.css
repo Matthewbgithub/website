@@ -187,7 +187,7 @@ h6,
 	height: 100vh;
 	position: relative;
 	display: flex;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: white;
     min-height: 100vh;
     z-index: 10;
@@ -197,6 +197,7 @@ h6,
 	position: absolute;
 	width: 30vw;
 	right: 0;
+	
 }
 .wrapText{
     float:left;
@@ -211,6 +212,7 @@ h6,
 	padding: 3vw;
 	right: 0;
 	width: 60vw;
+	
 }
 
 .profile-pic {
@@ -229,6 +231,21 @@ h6,
 	width: 100%;
 }
 
+.header-arrow{
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	bottom:0px;
+	position: relative;
+	animation: arrowbounce 0.3s infinite;
+  	animation-direction: alternate-reverse;
+	animation-timing-function: ease-out;
+}
+
+@keyframes arrowbounce {
+  	0% {transform: translateY(0px);}
+  	100% {transform: translateY(10px);}
+}
 .image-cover {
 	width: 100vw;
 	top: -20%;
@@ -248,6 +265,7 @@ h6,
 	max-width: 1024px;
 }
 
+/*
 .sideBit {
 	position: absolute;
 	background-color: white;
@@ -259,6 +277,7 @@ h6,
 	transform: rotate(7deg);
 	z-index: 4;
 }
+*/
 
 .part2 {
 	position: relative;

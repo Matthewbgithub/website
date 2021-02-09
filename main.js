@@ -11,7 +11,7 @@ $(document).ready(function() {
         $(this).removeClass("expandbox");
     });
     var $window = $(window).scroll(function(){
-        if ($window.scrollTop() > $(window).height()){
+        if ($window.scrollTop() > ($(window).height()/2)){
             $('body').addClass('scrolledOnePage');
             console.log("scrolled");
         }else{
