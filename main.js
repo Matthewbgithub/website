@@ -1,22 +1,15 @@
 $(document).ready(function() {
     
-    $('.bigbox').on('mouseover', function(e) {
-    if (e.target === this) {
-        $(this).removeClass("transparent");
-            $(this).addClass("expandbox");
-      }
-    })
-    .on('mouseout', function() {
-      $(this).addClass('transparent');
-        $(this).removeClass("expandbox");
-    });
+    var body = document.body,
+    html = document.documentElement;
+
+    var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
     var $window = $(window).scroll(function(){
-        if ($window.scrollTop() > ($(window).height()/2)){
-            $('body').addClass('scrolledOnePage');
-            console.log("scrolled");
-        }else{
-            $('body').removeClass('scrolledOnePage');
-        }
+        var percentDown = (document.documentElement.scrollTop/(height-window.innerHeight))
+        console.log(percentDown)
+        var percentUp = 1-percentDown
+        document.getElementsByClassName("background")[0].style.transform = "translateY(-"+(percentUp*100)+"vh)"
     });
     
     $('.option').on('click', function(){
@@ -26,6 +19,4 @@ $(document).ready(function() {
     $('.topBox').on('click', function(){
         window.location.href = "/info.html";
     })
-    /*$('.option').css('color', $(this).attr('col'));
-    $('.option').css('border-bottom-color', $(this).attr('col'));*/
 });

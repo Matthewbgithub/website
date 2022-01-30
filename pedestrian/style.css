@@ -1,0 +1,110 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #444;
+    margin-top: 100px;
+}
+
+.long-content {
+    height: 120vh;
+}
+
+.scrollBanner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-shadow {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.28);
+}
+
+.banner {
+    transition: box-shadow 0.3s;
+    color: black;
+    background-color: #fff;
+    font-size: 1.3rem;
+}
+
+.banner-inner {
+    line-height: 60px;
+    padding: 0px 9%;
+    letter-spacing: 0.2rem;
+}
+
+.banner-upper {
+    color: #fff;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #2b8046;
+    padding: 0px 6%;
+}
+@media only screen and (max-width: 700px) {
+   
+    .banner-inner{
+        font-size: 1.2rem;
+        letter-spacing: 0rem;
+    }
+    .images img{
+        width: 100vw;
+        
+    }
+}
+.r-w {
+    max-width: 1200px;
+}
+
+.m-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding: 20px 6%;
+    line-height: 1.5;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.images img{
+    width: 300px;
+    padding: 20px;
+}
+.video{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe{
+    min-width: 80vw;
+    min-height: 50vw;
+}
+a, ul li::before {
+    color: #2b8046;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
